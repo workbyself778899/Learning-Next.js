@@ -1,6 +1,12 @@
 "use client"
-export default function BlogPage(){
 
+import { notFound } from "next/navigation";
+
+
+
+export default function BlogPage(){
+  notFound();
+  
     return(
         <div>
             <h1 className="text-3xl font-bold "> Blog Page</h1> 
