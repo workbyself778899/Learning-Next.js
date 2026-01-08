@@ -20,8 +20,6 @@ export default async function School({params,}: { params: Promise <{slug: string
         <div className="">
             Hello, The length of slug is {length}
             <br />
-
-
         </div>
     )
  }
