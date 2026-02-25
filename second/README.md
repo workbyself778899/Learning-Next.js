@@ -15,3 +15,11 @@
     const isActive = pathname == link.href || (pathname.startWith(link.href) && link.href !== "/"); 
 )
 - now we can add css according to isActive.
+
+## usePath
+- It is used to see active link.
+```
+  const isActive = usePath === link.path || (usePath.startsWith(link.path) && link.path !== "/" ) ;
+  Here, 
+  usePath = usePathname();
+```

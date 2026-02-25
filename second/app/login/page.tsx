@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { describe } from "node:test";
+
 export const metadata = {
   title:"Login",
   describe:"Build by page"

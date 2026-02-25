@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation"
 
     
-export default async function reviewInfo({params,}: {params: Promise<{productId:String, reviewId:String}>}){
+export default async function reviewInfo({params,}: {params: Promise<{productId:string, reviewId:string}>}){
     const {productId, reviewId} = await params 
     if(parseInt(reviewId)>100){
-        notFound
+        notFound()
     }
     return(
         <div className="text-center mt-19">
@@ -14,3 +14,4 @@ export default async function reviewInfo({params,}: {params: Promise<{productId:
         </div>
     )
 }
+
